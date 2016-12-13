@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>聚划算</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/jus.css">
+	<script>
+	(function(){
+		window.addEventListener('resize',change,false);
+		change();
+		function change(){
+			document.documentElement.style.fontSize=20/320*document.documentElement.clientWidth+'px';
+		}
+	})()
+
+	
+
+	document.addEventListener('DOMContentLoaded',function(){
+		var oUl=document.querySelector('.banul');
+		var aLi=oUl.children;
+		var oBtn=document.querySelector('.bann');
+		var aBtn=oBtn.children;
+
+		var x=-aLi[0].offsetWidth;
+		var iNow=1;
+		var bReady=true;
+		var timer=null;
+		
+		oUl.style.WebkitTransform='translate3d('+x+'px,0,0)';
+		function run(){
+			iNow++;
+			x=-iNow*aLi[0].offsetWidth;
+			oUl.style.WebkitTransition='0.5s';
+			oUl.style.WebkitTransform='translate3d('+x+'px,0,0)';
+		}
+
+		timer=setInterval(run,2000);
+
+		
+		oUl.addEventListener('touchstart',function(ev){
+			if(!bReady)return;
+			bReady=false;
+			clearInterval(timer);
+			oUl.style.WebkitTransition='none';
+
+			var downX=ev.targetTouches[0].clientX;
+			var disX=downX-x;
+
+			document.addEventListener('touchmove',fnMove,false);
+			document.addEventListener('touchend',fnEnd,false);
+
+			function fnMove(ev){
+				x=ev.targetTouches[0].clientX-disX;
+				oUl.style.WebkitTransform='translate3d('+x+'px,0,0)';
+			}
+			function fnEnd(ev){
+				document.removeEventListener('touchmove',fnMove,false);
+				document.removeEventListener('touchend',fnEnd,false);
+
+				oUl.style.WebkitTransition='0.5s';
+				var upX=ev.changedTouches[0].clientX;
+				var cw=Math.abs(upX-downX);
+				if(cw==0){
+					bReady=true;
+				}
+				if(cw>100){
+					if(downX>upX){
+						iNow++;
+					}else{
+						iNow--;
+					}
+				}
+				x=-iNow*aLi[0].offsetWidth;
+				oUl.style.WebkitTransform='translate3d('+x+'px,0,0)';
+				timer=setInterval(run,2000);
+			}
+		},false);
+
+		oUl.addEventListener('transitionend',function(){
+			bReady=true;
+			if(iNow==aLi.length-1){
+				iNow=1;
+			}
+			if(iNow==0){
+				iNow=aLi.length-2;
+			}
+			oUl.style.WebkitTransition='none';
+			x=-iNow*aLi[0].offsetWidth;
+			oUl.style.WebkitTransform='translate3d('+x+'px,0,0)';
+			for(var i=0;i<aBtn.length;i++){
+				aBtn[i].className='';
+			}
+			aBtn[iNow-1].className='active';
+
+		},false);
+
+	},false);
+	</script>
+</head>
+<body>
+	<header>
+		<a href="javascript:;">返回</a>
+		<h1>聚划算</h1>	
+	</header>
+	<div class="banner">
+		<!-- <img src="img/banner.png" alt=""> -->
+		<div class="banimg">
+			<ul class="banul clearfix">
+				<li><img src="img/ban4.jpg" alt=""></li>
+				<li><img src="img/ban1.jpg" alt=""></li>
+				<li><img src="img/ban2.jpg" alt=""></li>
+				<li><img src="img/ban3.jpg" alt=""></li>
+				<li><img src="img/ban4.jpg" alt=""></li>
+				<li><img src="img/ban1.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div class="ban1">
+			<ul class="bann">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<section>
+		<ul class="nav clearfix">
+			<li><a class="img1" href="javascript:;">商品</a></li>
+			<li><a class="img2" href="javascript:;">生活</a></li>
+			<li><a class="img3" href="javascript:;">品牌</a></li>
+			<li><a class="img4" href="javascript:;">聚宝盆</a></li>
+			<li><a class="img5" href="javascript:;">聚名品</a></li>
+			<li><a class="img6" href="javascript:;">聚家装</a></li>
+			<li><a class="img7" href="javascript:;">聚透</a></li>
+			<li><a class="img8" href="javascript:;">客户端</a></li>
+		</ul>
+		<div class="floor">
+			<h2>聚划算热卖排行<span>TOP10</span></h2>
+			<ul>
+				<li class="f1">
+					<a href="javascript:;" class="clearfix">
+						<h3>1</h3>
+						<i></i>
+						<div>
+							<strong class="clearfix">
+								<h4>已售66666件</4>
+								<h4 class="fh4"><span>2.3折</span> ￥998</h4>
+							</strong>
+							
+							<p>￥19</p>
+						</div>
+						
+					</a>
+				</li>
+				<li class="f2">
+					<a href="javascript:;" class="clearfix">
+						<h3>2</h3>
+						<i></i>
+						<div>
+							<strong class="clearfix">
+								<h4>已售66666件</4>
+								<h4 class="fh4"><span>2.3折</span> ￥998</h4>
+							</strong>
+							<p>￥19</p>
+						</div>
+					</a>
+				</li>
+				<li class="f3">
+					<a href="javascript:;" class="clearfix">
+						<h3>3</h3>
+						<i></i>
+						<div>
+							<strong class="clearfix">
+								<h4>已售66666件</4>
+								<h4 class="fh4"><span>2.3折</span> ￥998</h4>
+							</strong>
+							<p>￥19</p>
+						</div>
+					</a>
+				</li>
+				<li class="f4">
+					<a href="javascript:;" class="clearfix">
+						<h3>4</h3>
+						<i></i>
+						<div>
+							<strong class="clearfix">
+								<h4>已售66666件</4>
+								<h4 class="fh4"><span>2.3折</span> ￥998</h4>
+							</strong>
+							<p>￥19</p>
+						</div>
+					</a>
+				</li>
+				<li class="f5">
+					<a href="javascript:;" class="clearfix">
+						<h3>5</h3>
+						<i></i>
+						<div>
+							<strong class="clearfix">
+								<h4>已售66666件</4>
+								<h4 class="fh4"><span>2.3折</span> ￥998</h4>
+							</strong>
+							<p>￥19</p>
+						</div>
+					</a>
+				</li>
+				<li class="f6">
+					<a href="javascript:;" class="clearfix">
+						<h3>6</h3>
+						<i></i>
+						<div>
+							<strong class="clearfix">
+								<h4>已售66666件</4>
+								<h4 class="fh4"><span>2.3折</span> ￥998</h4>
+							</strong>
+							<p>￥19</p>
+						</div>
+					</a>
+				</li>
+				<li class="f7">
+					<a href="javascript:;" class="clearfix">
+						<h3>7</h3>
+						<i></i>
+						<div>
+							<strong class="clearfix">
+								<h4>已售66666件</4>
+								<h4 class="fh4"><span>2.3折</span> ￥998</h4>
+							</strong>
+							<p>￥19</p>
+						</div>
+					</a>
+				</li>
+				<li class="f8">
+					<a href="javascript:;" class="clearfix">
+						<h3>8</h3>
+						<i></i>
+						<div>
+							<strong class="clearfix">
+								<h4>已售66666件</4>
+								<h4 class="fh4"><span>2.3折</span> ￥998</h4>
+							</strong>
+							<p>￥19</p>
+						</div>
+					</a>
+				</li>
+				<li class="f9">
+					<a href="javascript:;" class="clearfix">
+						<h3>9</h3>
+						<i></i>
+						<div>
+							<strong class="clearfix">
+								<h4>已售66666件</4>
+								<h4 class="fh4"><span>2.3折</span> ￥998</h4>
+							</strong>
+							<p>￥19</p>
+						</div>
+					</a>
+				</li>
+				<li class="f10">
+					<a href="javascript:;" class="clearfix">
+						<h3>10</h3>
+						<i></i>
+						<div>
+							<strong class="clearfix">
+								<h4>已售66666件</4>
+								<h4 class="fh4"><span>2.3折</span> ￥998</h4>
+							</strong>
+							<p>￥19</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+		<div class="shop">
+			<div class="shop1">
+				<p>更多划算 逛起来！</p>
+				<div class="shop-in clearfix">
+					<span>商品团</span>
+					<ul>
+						<li>服饰</li>
+						<li class="on">服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li class="on">服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li class="on">服饰</li>
+						<li>服饰</li>
+					</ul>
+				</div>
+			</div>
+			<div class="shop2">
+				<p>精彩商品 逛起来！</p>
+				<div class="shop-in clearfix">
+					<ul>
+						<li>服饰</li>
+						<li class="on">服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li class="on">服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+					</ul>
+					<span>生活团</span>
+				</div>
+			</div>
+			<div class="shop3">
+				<p>品质生活 逛起来！</p>
+				<div class="shop-in clearfix">
+					<ul>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li class="on">服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+						<li class="on">服饰</li>
+						<li>服饰</li>
+						<li>服饰</li>
+					</ul>
+					<span>品牌团</span>
+				</div>
+			</div>
+			<p>品牌折扣 逛起来！</p>
+		</div>
+		<div class="end">
+			<a class="end1" href="javascript:;"><span></span><p>ios客户端</p></a>
+			<a class="end2" href="javascript:;"><span></span><p>安卓客户端</p></a>
+			<a class="end3" href="javascript:;"><span></span><p>意见反馈</p></a>
+		</div>
+		<div class="login">
+			<a class="log1" href="javascript:;">登录</a>
+			<a class="log2" href="javascript:;">注册</a>
+			<a class="log3" href="#">TOP</a>
+		</div>
+	</section>
+	<footer>
+		<p class="foot1">
+			<a href="javascript:;">标准版</a>
+			<a href="javascript:;">电脑版</a>
+		</p>
+		
+		<p class="foot2">2013-浙B2-20090224 服务中心</p>
+	</footer>
+</body>
+</html>

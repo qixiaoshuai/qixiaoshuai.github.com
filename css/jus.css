@@ -1,0 +1,405 @@
+header{
+	height:2.5rem;
+	width: 100%;
+	background:-webkit-linear-gradient(#fefefe,#ececec);
+	display: -webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+	text-indent: -999em;
+	position: relative;
+}
+	header h1{
+		width:3.57rem;
+		height: 1rem;
+		background: url(../img/logo.png) no-repeat;
+		background-size: 3.57rem 1rem;	
+	}
+	header a{
+		width:3.15rem;
+		height: 1.5rem;
+		display: block;
+		background: url(../img/back.png) no-repeat;
+		background-size:3.15rem 1.5rem;
+		position: absolute;
+		left:0.5rem;
+		top:0.5rem;
+	}
+
+
+.banner{
+}
+	/*.banner img{
+		width: 100%;
+	}*/
+	.banner .banimg{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+		.banner .banimg .banul{
+			width: 600%;
+			height: 100%;
+			transform:-webkit-translate3d(0,0,0);
+		}
+		.banner .banimg .banul li{
+			float: left;
+			width: calc(100%/6);
+		}
+		.banner .banimg .banul img{
+			width: 100%;
+		}
+	.banner .ban1{
+		margin:0.5rem 0;
+		height: 0.25rem;
+		display: -webkit-box;
+		-webkit-box-pack:center;
+	}
+	.banner .ban1 li{
+		width:0.25rem;
+		height: 0.25rem;
+		background: #ccc;
+		margin:0 0.125rem;
+		border-radius:50%; 
+		float: left;
+	}
+	.banner .ban1 li.active{	
+		background: orange;
+	}
+section{
+	width:15rem;
+	margin: 0 auto; 
+}
+	.nav{
+		padding-bottom:1rem;
+	}
+		.nav li{
+			width:25%; 
+			float: left;
+		}
+		.nav a{
+			width: 2rem;
+			height: 0.6rem;
+			margin:0.5rem 0.8rem;
+			display: inline-block;
+			background: #ccc;
+			color:#999;
+			font-size: 0.6rem;
+			text-align: center;
+			padding-top:2.5rem;
+		}
+		.nav li a.img1{
+			background: url(../img/nav1.png) no-repeat;
+			background-size: 2rem 2rem;
+		}
+		.nav li a.img2{
+			background: url(../img/nav2.png) no-repeat;
+			background-size: 2rem 2rem;
+		}
+		.nav li a.img3{
+			background: url(../img/nav3.png) no-repeat;
+			background-size: 2rem 2rem;
+		}
+		.nav li a.img4{
+			background: url(../img/nav4.png) no-repeat;
+			background-size: 2rem 2rem;
+		}
+		.nav li a.img5{
+			background: url(../img/nav5.png) no-repeat;
+			background-size: 2rem 2rem;
+		}
+		.nav li a.img6{
+			background: url(../img/nav6.png) no-repeat;
+			background-size: 2rem 2rem;
+		}
+		.nav li a.img7{
+			background: url(../img/nav7.png) no-repeat;
+			background-size: 2rem 2rem;
+		}
+		.nav li a.img8{
+			background: url(../img/nav8.png) no-repeat;
+			background-size: 2rem 2rem;
+		}
+	.floor{
+		
+	}
+		.floor h2{
+			font-size: 0.7rem;
+			border-left:4px solid #d51938;
+			margin-bottom:0.525rem;
+			color:#333;
+			text-indent: 0.5rem;
+		}
+			.floor h2 span{
+				float: right;
+			}
+			.floor ul{
+				padding-top:0.75rem;
+				border-top:0.1rem solid #ccc;
+			}
+				.floor li{
+					padding-bottom:0.5rem;
+				}
+				.floor li a{
+					width: 100%;
+					height: 3rem;
+					display: block;
+					background: #f4f4f4;
+				}
+					.floor li a h4{
+						font-size: 0.6rem;
+						color:#999;
+					}
+					.floor li a h3{
+						width: 1.5rem;
+						height: 100%;
+						background: #e00202;
+						text-align: center;
+						font-size:0.85rem;
+						line-height: 3rem; 
+						color:#fff;
+						font-weight: bolder;
+						float: left;
+					}
+					.floor li.f1 a h3{
+						background: #e00202;
+					}
+					.floor li.f2 a h3{
+						background: #ff4800;
+					}
+					.floor li.f3 a h3{
+						background: #ff7300;
+					}
+					.floor li.f4 a h3{
+						background: #ff9d00;
+					}
+					.floor li.f5 a h3{
+						background: #ffa800;
+					}
+					.floor li.f6 a h3{
+						background: #ffb400;
+					}
+					.floor li.f7 a h3{
+						background: #ffba00;
+					}
+					.floor li.f8 a h3{
+						background: #fcd000;
+					}
+					.floor li.f9 a h3{
+						background: #ffd719;
+					}
+					.floor li.f10 a h3{
+						background: #ffe152;
+					}
+					
+					.floor li a i{
+						width: 4.5rem;
+						height: 100%;
+						float: left;
+						background: url(../img/floor.png) no-repeat;
+						background-size: 4.5rem 34.5rem;
+					}
+					.floor li.f2 a i{
+						background-position: left -3.5rem; 
+					}
+					.floor li.f3 a i{
+						background-position: left -7rem; 
+					}
+					.floor li.f4 a i{
+						background-position: left -10.5rem; 
+					}
+					.floor li.f5 a i{
+						background-position: left -14rem; 
+					}
+					.floor li.f6 a i{
+						background-position: left -17.5rem; 
+					}
+					.floor li.f7 a i{
+						background-position: left -21rem; 
+					}
+					.floor li.f8 a i{
+						background-position: left -24.5rem; 
+					}
+					.floor li.f9 a i{
+						background-position: left -28rem; 
+					}
+					.floor li.f10 a i{
+						background-position: left -31.5rem; 
+					}
+					.floor li a div{
+						width: 8rem;
+						height: 1.5rem;
+						padding:0.75rem 0.5rem;
+						font-size: 0.6rem;
+						float: left;
+					}
+					.floor li a div span{
+						color:#c7223d;
+					}
+					.floor li a div strong{
+						display: inline-block;
+						float: left;
+					}
+					.floor li a div strong .fh4{padding-top:0.45rem;}
+					.floor li a div p{
+						height: 1.5rem;
+						line-height: 1.5rem;
+						font-size: 0.8rem;
+						float: right;
+						color:#d51938;
+						padding-right:0.7rem;
+						font-weight: bolder;
+						background: url(../img/right.png) no-repeat right center;
+						background-size: 0.325rem 0.55rem;
+					}
+	.shop{}
+		.shop p{
+			width: 100%;
+			height:2rem;
+			line-height: 2rem;
+			font-size: 0.7rem;
+			text-align: center;
+			color:#666666;
+			margin-bottom:0.5rem;
+			background:url(../img/right.png) no-repeat #f5f5f5 94% center;
+			background-size: 0.325rem 0.55rem;
+		}
+		.shop .shop-in{
+			width: 100%;
+			height: 8.8rem;
+			position: relative;
+		}
+		.shop1,.shop2,.shop3{
+			margin-bottom:0.5rem;
+		}
+			.shop .shop1 span{
+				background:url(../img/shop1.png) #ff3900 bottom center no-repeat; 
+			}
+			.shop .shop2 span{
+				background:url(../img/shop2.png) #8bca11 bottom center no-repeat; 
+			}
+			.shop .shop3 span{
+				background:url(../img/shop3.png) #838383 bottom center no-repeat; 
+			}
+			.shop .shop-in span{
+				width: 25%;
+				display: block;
+				float: left;
+				height: 100%;
+				/*background:url(../img/shop1.png) #ff3900 bottom center no-repeat ;*/
+				background-size: 3.75rem 3.35rem;
+				font-size: 0.7rem;
+				text-align:center;
+				color:#fff;
+				line-height: 2.15rem;
+			}
+			.shop .shop-in{
+				box-sizing:border-box;
+			}
+			.shop .shop-in ul{
+				width: 75%;
+				/*height: 100%; */
+				height: 8.8rem;
+				float: right;
+				margin-top: 1px;
+				/*margin-left:1px;*/
+			}
+				.shop .shop-in ul li{
+					/*width: 3.7rem;*/
+					width: calc(100%/3);
+					height: 2.22rem;
+					float: left;
+					border:1px solid #ccc;
+					margin-left:-1px;
+					margin-top:-1px;
+					text-align: center;
+					line-height:2.22rem; 
+					font-size: 0.6rem;
+					color:#999;
+					box-sizing:border-box;
+
+				}
+				.shop .shop-in ul li.on{color:#d51942;}
+	.end{
+		padding:0.5rem 0;
+		display: -webkit-box;
+	}
+		.end a{
+			display:block;
+			height: 4rem;
+			color:#fff;
+			font-size: 0.7rem;
+			text-align: center;
+			-webkit-box-flex:1;
+
+		}
+		.end a.end1{
+			background: #38a4f1;
+		}
+		.end a.end2{
+			background: #8bca11;
+		}
+		.end a.end3{
+			background: #ff7404;
+		}
+		.end a span{
+			/*width: 1rem;*/
+			width: 100%;
+			height:1.1rem;
+			margin-top:0.75rem;
+			margin-bottom:0.875rem;
+			display: block;
+		}
+		.end .end1 span{
+			background:url(../img/end2-1.png)  no-repeat top center;
+		}
+		.end .end2 span{
+			background:url(../img/end2-2.png)  no-repeat top center;	
+		}
+		.end .end3 span{
+			background:url(../img/end2-3.png)  no-repeat top center;	
+		}
+		.end .end1 span,.end .end2 span,.end .end3 span{
+			background-size: 1rem 1.1rem;
+		}
+	.login{
+		height: 2.2rem;
+		background: #f8f8f8;
+	}	
+		
+		.login a.log1{
+			float: left;
+		}
+		.login a.log2{
+			float: left;
+		}
+		.login a.log3{
+			float:right;
+			padding-right:1rem;
+			margin-right:0.5rem;
+			background:url(../img/right.png) no-repeat right center;
+		}
+		.login a{
+			font-size: 0.7rem;
+			line-height: 2.2rem;
+			display: inline-block;
+			text-align: center;
+			padding:0 0.25rem 0 1rem;
+			color: #333;
+		}
+	footer{
+		padding:1.1rem 0;
+	}
+	footer a{
+		display: inline-block;
+		font-size: 0.7rem;
+		margin-bottom:0.8rem;
+		color:#333;
+	}
+	footer p{
+		text-align: center;
+	}
+	footer .foot2{
+		font-size:0.55rem;
+		color:#999;
+	}
+
