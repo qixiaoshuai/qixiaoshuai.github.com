@@ -1,0 +1,17 @@
+*{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:12px;font-weight:normal;
+margin:0;padding:0;}
+li,dl{list-style:none;}
+a{color:#000;text-decoration:none;}
+b,strong{font-weight:normal;}
+em,i{font-style:normal;}
+img{vertical-align:top;}
+ul,dl,dt,dd{margin:0;padding:0;}
+input,select{outline:none;}
+.clearfix{zoom:1;}
+.clearfix:after{
+	display:block;
+	content:'';
+    clear:both;
+    overflow:hidden;
+}
