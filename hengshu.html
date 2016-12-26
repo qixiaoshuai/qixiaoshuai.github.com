@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+	div{
+		width: 200px;
+		height: 200px;
+		background: pink;
+		font-size: 100px;
+		line-height: 200px;
+		text-align: center;
+		margin:50px auto;
+	}
+	@media screen and (orientation:landscape){
+		div:after{
+			content:'横屏';
+		}
+	}
+	@media screen and (orientation:portrait){
+		div:after{
+			content:'竖屏';
+		}
+	}
+
+
+	/*不行啊*/
+	/*@media and (max-device-width:1024px){
+		div:after{
+			content:'max';
+		}
+	}
+	@media and (max-device-width:624px){
+		div:after{
+			content:'min';
+		}
+	}*/
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

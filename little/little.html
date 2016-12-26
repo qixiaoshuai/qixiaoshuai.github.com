@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>第一个小页面</title>
+	<link rel="stylesheet" href="css/base.css">
+	<style>
+	html{
+		font-size: 20px;
+		font-family:'Microsoft Yahei';
+	}
+	header{
+		width: 100%;
+		height:3rem;
+		background:#344b5d; 
+		font-size: 1rem;
+		display: -webkit-box;
+	}
+	header a{
+		display: block;
+		-Webkit-box-flex:1;
+		background-size:0.75rem 0.5rem;
+	}
+	
+	header .hea1{
+		background: url(img/header2.png) no-repeat center #344b5d;
+		background-size:1.05rem 0.67rem;
+	}
+	header .hea2{
+		background: url(img/header1.png) no-repeat center #344b5d;
+		background-size:1.05rem 0.67rem;
+	}
+	
+	header h2{
+		color: #fff;
+		width: 10rem;
+		font-size: 0.8rem;
+		text-align: center;
+		line-height:3rem; 
+		-Wibkit-box-flex:3;
+		border-left:1px solid #4c6279;
+		border-right:1px solid #4c6279;
+	}
+
+	.h2{
+		height: 2rem;
+		font-size: 0.7rem;
+		color:#ccc;
+		line-height: 2rem;
+		border-bottom:1px solid #ccc;
+	}
+	section{
+		width:14rem;
+		margin: 0 auto;
+	}
+	h3{
+		font-size:0.8rem;
+		color:#212121;
+		font-weight: bolder;
+	}
+	p{
+		font-size: 0.6rem;
+		color:#656565;
+		line-height: 1rem;
+	}
+	section img{
+		width: 4rem;
+		height: 4rem;
+	}
+	.box1{
+		margin-top:1rem;
+		padding-bottom:0.75rem;
+		border-bottom:1px solid #ccc;
+	}
+	.box1 img{
+		width: 100%;
+		height: 100%;
+	}
+	.box1 h3{
+		margin:1rem 0;
+	}
+	.box2{
+		padding:1rem 0;
+		border-bottom: 1px solid #ccc;
+	}
+	.box2 img{
+		float: left;
+		margin-right: 1rem;
+	}
+	.box2 h3{
+		float: left;
+		width: 9rem;
+	}
+	.box p{
+		float: left;
+		width: 9rem;
+	}
+	.box2 .box2-1{
+		padding-bottom:1rem;
+	}
+	.box3{
+		padding:1rem 0 0.5rem 0;
+		border-bottom: 1px solid #ccc;
+	}
+	.box3 h3{
+		padding-bottom:0.75rem;
+	}
+	.box3 p{
+		padding-bottom:0.75rem;
+	}
+	.box3 ul{
+		margin-right:-1rem;
+	}
+	.box3 li{
+		width: 4rem;
+		height: 4rem;
+		float: left;
+		padding:0rem 1rem 1rem 0;
+	}
+	.box4{
+		padding-bottom:1rem;
+		border-bottom:1px solid #ccc;
+	}
+	.box4 .box4-1 h3{
+		padding:1rem 0 0.75rem 0;
+	}
+	.box4 .box4-1 p{
+		padding-bottom: 1rem;
+	}
+	.box4 .box4-2 img{
+		padding-right: 1rem;
+		float: left;
+	}
+	.box4 .box3-2 p{
+		float: left;
+	}
+	.box5{
+		border-bottom:1px solid #ccc;
+	}
+	.box5 .box5-1 h3{
+		padding:1rem 0 0.75rem 0;
+		text-align: center;
+	}
+	.box5 .box5-1 p{
+		text-align: center;
+	}
+	.box5 .box5-2{
+		padding:1.1rem 1rem 1rem 1rem;
+		display: -webkit-box;
+	}
+	.box5 .box5-2 a{
+		display: block;
+		-webkit-box-flex:1;
+	}
+	.box5 .box5-2 img{
+		width: 2.5rem;
+		height: 2.5rem;
+		text-align: center;
+		padding:0 0.55rem;
+	}
+	.box6{
+		padding:1rem;
+	}
+	.box6 p{
+		font-size: 0.6rem;
+		line-height: 1rem;
+		text-align: center;
+		color:#a5a5a5;
+	}
+	footer{
+		width: 100%;
+		height: 3rem;
+		background: #000;
+		padding-top: 0.5rem;
+	}
+	footer ul{
+		display:-webkit-box; 
+	}
+	footer li{
+		-webkit-box-flex:1;
+		/*width: 1rem;
+		height: 1rem;
+		margin:0 0.5rem;
+		float: left;*/
+	}
+	footer li a{
+		width: 1rem;
+		height: 1rem;
+		margin:0 0.5rem;
+		display: block;
+	}
+	.foot1 a{
+		background: url(img/foot1.png) no-repeat;
+		background-size: 1rem 1rem;
+	}
+	.foot2 a{
+		background: url(img/foot2.png) no-repeat;
+		background-size: 1rem 1rem;
+	}
+	.foot3 a{background:#2780b8;}
+	.foot4 a{background:#30a860;}
+	.foot5 a{background:#ed7b1b;}
+	.foot6 a{background:#9244aa;}
+	.foot7 a{background:#bf3b24;}
+	.foot8 a{background:#808c8c;}
+	footer p{
+		font-size: 0.5rem;
+		color:#6d6d6d;
+		text-align: center;
+		line-height: 1.5rem;
+	}
+	</style>
+	<script>
+	(function(){
+		window.addEventListener('resize',change,false);
+		change();
+		function change(){
+			document.documentElement.style.fontSize=20/320*document.documentElement.clientWidth+'px';
+		}
+	})()	
+	</script>
+</head>
+<body>
+	<header>
+		<a href="javascript:;" class="hea1"></a>
+		<h2>HEXAGONE</h2>
+		<a href="javascript:;" class="hea2"></a>
+	</header>
+	<section>
+		<h2 class="h2">HEXAGONE</h2>
+		<div class="box1">
+			<img src="img/box1.png" alt="">
+			<h3>WELL,HELLOW THERE</h3>
+			<p>Nowadays, there are more and more in. It is estimated that. Why have there been so many? Maybe the reasons can be listed as follows. The first one is. Besides,The third one is. To sum up, the main cause of  is due to. </p>
+		</div>
+		<div class="box2">
+			<div class="box2-1 clearfix">
+				<img src="img/box2-1.png" alt="">
+				<h3>EASY TO USE</h3>
+				<p>It is estimated that. Why have there been so many? Maybe the reasons can be listed.</p>
+			</div>
+			<div class="box2-2 clearfix">
+				<img src="img/box2-2.png" alt="">
+				<h3>BUIT WITH CARE!</h3>
+				<p>The third one is. To sum up, the main cause of  is due to.</p>
+			</div>
+		</div>
+		<div class="box3">
+			<h3>SOME OF OUR WORKS!</h3>
+			<p>It is estimated that. Why have there been so many? Maybe the reasons can be listed.</p>
+			<ul class="clearfix">
+				<li><img src="img/box3-1.png" alt=""></li>
+				<li><img src="img/box3-2.png" alt=""></li>
+				<li><img src="img/box3-3.png" alt=""></li>
+				<li><img src="img/box3-4.png" alt=""></li>
+				<li><img src="img/box3-5.png" alt=""></li>
+				<li><img src="img/box3-6.png" alt=""></li>
+			</ul>
+		</div>
+
+		<div class="box4">
+			<div class="box4-1">
+				<h3>TESTIMONIALS</h3>
+				<p>It is estimated that. Why have there been so many? Maybe the reasons can be listed.Maybe the reasons can be listed as follows. </p>
+			</div>
+			<div class="box4-2 clearfix">
+				<img src="img/box4.png" alt="">
+				<p> Why have there been so many? Maybe the reasons can be listed.Maybe the reasons can be listed as follows. </p>
+			</div>	
+		</div>
+		<div class="box5">
+			<div class="box5-1">
+				<h3>GET SOCLIAL WITH US!</h3>
+				<p>Get news,there are more and more in. It is estimated that. Why have there been so many?</p>
+			</div>
+			<div class="box5-2">
+				<a href="javascript:;"><img src="img/box5-1.png" alt=""></a>
+				<a href="javascript:;"><img src="img/box5-2.png" alt=""></a>
+				<a href="javascript:;"><img src="img/box5-3.png" alt=""></a>
+			</div>
+		</div>
+		<div class="box6">
+			<p>COPYRIGHT 2013</p>
+			<p>ALL RIGHTS RESERVED</p>
+		</div>
+	</section>	
+	<footer>
+		<ul class="clearfix foot">
+			<li class="foot1"><a href="javascript:;"></a></li>
+			<li class="foot2"><a href="javascript:;"></a></li>
+			<li class="foot3"><a href="javascript:;"></a></li>
+			<li class="foot4"><a href="javascript:;"></a></li>
+			<li class="foot5"><a href="javascript:;"></a></li>
+			<li class="foot6"><a href="javascript:;"></a></li>
+			<li class="foot7"><a href="javascript:;"></a></li>
+			<li class="foot8"><a href="javascript:;"></a></li>
+		</ul>
+		<p>TAP THE ICONS TO CHANGE MENU STYLE!</p>
+	</footer>
+</body>
+</html>

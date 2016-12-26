@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>多点旋转</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+		
+	<style>
+	div{
+		display: none;
+	}
+	.box img{
+		width: 100%;
+		height: 100%;
+	}
+	.box{
+		display: block;
+		width: 200px;
+		height: 200px;
+		background: skyblue;
+		margin:50px auto;
+	}
+	</style>
+	<script>
+	function deg(a,b){
+		var l=Math.atan2(a,b);
+		return	180/Math.PI*l;
+	}
+	document.addEventListener('DOMContentLoaded',function(){
+		var oBox=document.querySelector('.box');
+		var d=0;//旋转
+		var s=1;//放大
+		var x=0;//平移
+		var y=0;
+
+		document.addEventListener('touchstart',function(ev){
+			var oldD=d;
+			var oldS=s;
+			var oldX=x;
+			var oldY=y;
+
+
+			function getD(ev){
+				var x2=ev.targetTouches[1].clientX;
+				var y2=ev.targetTouches[1].clientY;
+				var x1=ev.targetTouches[0].clientX;
+				var y1=ev.targetTouches[0].clientY;
+				var a=x1-x2;
+				var b=y2-y1
+				var de=deg(a,b);
+				return de;
+			}
+
+			function getS(ev){
+				var x2=ev.targetTouches[1].clientX;
+				var y2=ev.targetTouches[1].clientY;
+				var x1=ev.targetTouches[0].clientX;
+				var y1=ev.targetTouches[0].clientY;
+				
+				var a=x2-x1;
+				var b=y2-y1;
+				return Math.sqrt(a*a+b*b);
+			}
+
+			function getXY(ev){
+				var x2=ev.targetTouches[1].clientX;
+				var y2=ev.targetTouches[1].clientY;
+				var x1=ev.targetTouches[0].clientX;
+				var y1=ev.targetTouches[0].clientY;
+				x=(x1+x2)/2;
+				y=(y1+y2)/2;
+				
+				return {x:x,y:y};
+			}
+			
+			if(ev.targetTouches.length==2){
+				var d1=getD(ev);
+				var s1=getS(ev);
+				var downX=getXY(ev).x;
+				var downY=getXY(ev).y;
+			}
+
+			function fnMove(ev){
+				if(ev.targetTouches.length==2){
+					var d2=getD(ev);
+					d=d2-d1+oldD;
+
+					var s2=getS(ev);
+					s=s2/s1*oldS;
+
+					var moveX=getXY(ev).x;
+					var moveY=getXY(ev).y;
+					x=moveX-downX+oldX;
+					y=moveY-downY+oldY;
+
+					oBox.style.transform='translate3d('+x+'px,'+y+'px,0px) scale('+s+') rotate('+d+'deg)';
+				}
+			}
+
+			function fnEnd(ev){
+				
+				document.removeEventListener('touchmove',fnMove,false);
+				document.removeEventListener('touchend',fnEnd,false);
+				
+			}
+
+			document.addEventListener('touchmove',fnMove,false);
+			document.addEventListener('touchend',fnEnd,false);
+
+			ev.preventDefault();
+		},false);
+
+	},false);
+
+	</script>
+</head>
+<body>
+	<div class="box"><img src="123.jpg" alt=""></div>
+</body>
+</html>

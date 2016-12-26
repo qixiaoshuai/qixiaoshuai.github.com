@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+	<link rel="stylesheet" href="animate.css">
+	<title>重力感应</title>
+	<style>
+	.box{
+		width: 100px;
+		height: 100px;
+		background: skyblue;
+		transform:rotate(0deg);
+	}
+	.move{
+		animation:shake 0.5s linear 2;
+	}
+	@keyframes shake{
+		0%{
+			transform:rotate(0deg);
+		}
+		25%{
+			transform:rotate(10deg);
+		}
+		50%{
+			transform:rotate(0deg);
+		}
+		75%{
+			transform:rotate(-10deg);
+		}
+		0%{
+			transform:rotate(0deg);
+		}
+	}
+	</style>
+	<script>
+	window.onload=function(){
+		var oBox=document.querySelector('.box');
+		oBox.addEventListener('click',function(){
+			this.classList.add('move');
+		},false);
+		oBox.addEventListener('webkitAnimationEnd',function(){
+			oBox.classList.remove('move');
+		},false);
+
+		// if(window.DeviceMotionEvent){
+		// 	window.addEventLiatener('devicemotion',function(ev){
+		// 		var ac=ev.accelerationIncludingGravity;
+				
+		// 		if(Math.abs(ac.x-lastX)>20 || Math.abs(ac.y-lastY)>20 || Math.abs(ac.z-lastZ)>20){
+		// 			oBox.classList.add('move');
+		// 			lastX=Math.abs(ac.x);
+		// 			lastY=Math.abs(ac.y);
+		// 			lastZ=Math.abs(ac.z);
+
+		// 		}
+				
+		// 	});
+
+		// }
+
+		
+		// oBox.addEventListener('webkitAnimationEnd',function(){
+		// 	oBox.classList.romove('move');
+		// },false);
+
+	}
+
+
+	</script>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>
