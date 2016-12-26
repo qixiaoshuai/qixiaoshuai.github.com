@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+<title>无标题文档</title>
+
+<style>
+	div{ display:none;}
+	.box{ display:block; width:200px; height:200px; background:red; margin:100px auto; 
+	}
+	
+	.move{-webkit-animation:shake 0.4s linear 4;}
+	
+	@-webkit-keyframes shake{
+		0%{
+			-webkit-transform:rotate(0deg);	
+		}
+		25%{
+			-webkit-transform:rotate(10deg);	
+		}
+		50%{
+			-webkit-transform:rotate(0deg);	
+		}	
+		75%{
+			-webkit-transform:rotate(-10deg);	
+		}
+		100%{
+			-webkit-transform:rotate(0deg);	
+		}
+	}
+	
+</style>
+<script>
+	window.onload=function(){
+		var oBox=document.querySelector('.box');
+		if(window.DeviceMotionEvent){
+			
+			var lastX=0;
+			var lastY=0;
+			var lastZ=0;
+			window.addEventListener('devicemotion',function(ev){
+				//重力加速度值
+				var ac=ev.accelerationIncludingGravity;
+				
+				if(Math.abs(ac.x-lastX)>20||Math.abs(ac.y-lastY)>20||Math.abs(ac.z-lastZ)>20){
+					oBox.classList.add('move');	
+				}
+				
+				lastX=ac.x;
+				lastY=ac.y;
+				lastZ=ac.z;	
+			},false);
+			
+			
+		}else{
+			alert('不支持重力感应');	
+		}
+		
+		//清空class
+		oBox.addEventListener('webkitAnimationEnd',function(){
+			oBox.classList.remove('move');	
+		},false);
+			
+	};
+</script>
+</head>
+
+<body>	
+	<div class="box"></div>
+</body>
+</html>
