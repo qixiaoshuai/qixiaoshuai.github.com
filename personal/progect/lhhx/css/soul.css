@@ -1,0 +1,1130 @@
+body{
+    max-width: 1920px;
+    background: url(../images/body.jpg) no-repeat center 55px #1b1a20;
+    margin: 0 auto;
+}
+.center{
+	width:1007px;
+	margin:0 auto;
+}
+.top{
+	height:55px;
+	background-color: #f3f3f3;
+}
+	.top-top{
+		height:50px;
+		background: url(../images/top_back.png) repeat-x;
+	}
+		.top-left{
+			height:36px;
+			padding:6px 0px 8px 0px;
+			width:117px;
+			float:left;
+		}
+			.top-left a{
+				height:36px;
+				width:117px;
+				display: block;
+				background: url(../images/xbt_logo.png) no-repeat;
+				background-position:0px -5px;
+				border-right:1px solid #cecece;
+			}
+		.top-right{
+			height: 50px;
+			width:541px;
+			float:right;
+			font-size: 12px;
+		}
+			.top-right li{float:left;}
+			.top-right i{
+				width: 25px;
+				height: 25px;
+				display: inline-block;
+				background: red;
+				float: left;
+				padding:13px 0px ;
+			}
+			.top-right a{
+				display: block;
+				height:50px;
+				line-height: 50px;
+			}
+			.top-right a.tr1{
+				padding:0px 10px;
+				color:#333333;
+				float: left;
+				/*text-indent:30px;*/
+				transition: all 1s;
+			}
+			.top-right li:hover i{
+				transform:rotate(360deg);
+				transition: all 1s;
+			}
+			.top-right i.trtr1{background: url(../images/top1.png) no-repeat center;}
+			.top-right i.trtr2{background: url(../images/top2.png) no-repeat center;}
+			.top-right i.trtr3{background: url(../images/top3.png) no-repeat center;}
+			/*.top-right a.tr1-1{background: url(../images/top1.png) no-repeat 8px 13px;}
+			.top-right a.tr1-2{background: url(../images/top2.png) no-repeat 8px 13px;}
+			.top-right a.tr1-3{background: url(../images/top3.png) no-repeat 8px 13px;}*/
+			.top-right a.tr2{
+				padding:0px 27px;
+				border-left:1px solid #e1e1e1;
+				color:#4a4a4a;
+				background: url(../images/topjiao.png) no-repeat 95px center;
+			}
+			.top-right a.tr2-1{
+				background: url(../images/topjiao.png) no-repeat 62px center;
+			
+			}
+			.top-right a.tr2-3{	border-right:1px solid #e1e1e1;}
+	.top-down{
+		height:5px;
+		background: url(../images/jianbian.png) no-repeat;
+		background-position: 0px -50px;
+	}
+.main{
+	/*height:1605px;*/
+	width: 1007px;
+	margin:0 auto;
+}
+	.banner{
+		height:551px;
+		background:url(../images/banner.jpg) no-repeat;
+		
+	}
+		.banner-top{
+			height: 109px;
+		}
+		.banner-top ul{
+			float:right;
+		}
+		.banner-top h1{
+			height: 109px;
+			width: 220px;
+			float:left;
+			text-indent: -999px;
+			background: url(../images/logo.gif) no-repeat;
+		}
+		.banner-top li{
+			float:left;
+			text-align:center;
+			height: 76px;
+			padding-top:33px;
+
+		}
+		
+		.banner-top a{
+			padding:0px 10px;
+			text-align:center;
+			display:block; 	
+			height:76px;
+		}
+			.banner-top h2{
+				/*color:#d9d4f2;*/
+				color:#fff;
+				font-size: 16px;
+				opacity: 0.7;
+				/*font-weight: bold;*/
+				font-family:'Microsoft Yahei';
+			}
+			.banner-top h3{
+				display: block;
+				font-size:7px;
+				/*color:#86748c;*/
+				color:#fff;
+				padding-top:2px;
+				opacity: 0.3;
+			}
+			.banner-top .bt1{
+				position:relative;
+				transition:all 2s;
+				/*不管用？？？？？*/
+			}
+			.banner-top .bt-1{
+				height:50px; 
+				padding:30px 0px;
+				background: url(../images/nav_new_hover.jpg) no-repeat center;
+				position:absolute;
+				top:0;
+				left:8px;
+				opacity: 0.95;
+				display: none;
+				transition:all 1s;
+			}
+			.banner-top .bt-1 a{
+				font-size: 12px;
+				color: #fff;
+				display:block;
+				height:25px;
+				line-height: 25px;
+			}
+			.banner-top .bt1:hover .bt-1{
+				display: block;
+				transition:all 1s;
+			}
+			/*.banner-top li:hover{
+				height: 71px; 
+				border-bottom:5px solid #fef89d;
+			}*/
+	.down{
+		height: 610px;
+		width: 1000px;
+		margin:0 auto;
+	}
+		.down-top{
+			height: 414px;
+		}
+			.down-top-left{
+				width: 617px;
+				height: 414px;
+				float:left;
+			}
+				.dtl-top{
+					height: 110px;
+				}
+					.dtl-top .dtl-top1{
+						width:216px;
+						height: 110px; 
+						float:left;
+						background: url(../images/xbt2.jpg) no-repeat;
+						background-position: 0px 0px;
+					}
+					.dtl-top .dtop{
+						width:100px;
+						height: 110px;
+						float:left;
+						background: url(../images/xbt2.jpg) no-repeat; 
+					}
+					.dtl-top .dtl-top2{
+						background-position:-217px 0px;
+					}
+					.dtl-top .dtl-top3{
+						background-position:-317px 0px;
+					}
+					.dtl-top .dtl-top4{
+						background-position:-417px 0px;
+					}
+					.dtl-top .dtl-top5{
+						background-position:-517px 0px;
+					}
+		
+				.dtl-down{
+					width: 616px;
+					height: 303px;
+					position: relative;
+				}
+					.dtl-down .dtl-down-con{
+						position: relative;
+						top:0;
+						left:0;
+					}
+					.dtl-down .dtl-down-con a{
+						display: block;
+						position: absolute;
+						top:0;
+						left:0;
+						opacity:0;
+					}
+					.dtl-down .dtl-down-sel{
+						position: absolute;
+						right:8px;
+						bottom:8px;
+						z-index:100;
+					}
+					.dtl-down .dtl-down-sel li{
+						width: 15px;
+						height: 15px;
+						background: #3a3e47;
+						margin:2px;
+						float: left;
+						border-radius:50%;
+						cursor:pointer;
+					}
+					.dtl-down .dtl-down-sel li.on{
+						background: #d0290a;
+					}
+
+			.down-top-right{
+				width: 383px;
+				height: 414px;
+				float: left;
+			}
+				.down-top-right .dtr1{
+					height: 50px;
+					width: 270px;
+    				margin:4px 8px 4px 8px; 
+					background:url(../images/dtr1.png) no-repeat center;
+					padding-left: 97px;
+					padding-top:10px; 
+					opacity:0.8;
+					position: relative;
+					/*position: relative;
+					overflow: hidden;*/
+				}
+					.down-top-right .dtr1 .dtrd{
+						width: 207px;
+						height: 40px;
+						position: absolute;
+						overflow: hidden;
+					}
+					.down-top-right .dtr1 .dtrul{
+						position:absolute;
+						top:0;
+						left:0;
+						/*top: 8px;
+    					left: 100px;*/
+   					}
+					.down-top-right .dtr1 a{
+						font-size: 12px;
+						color:#adb9e0;
+						display: block;
+						line-height: 23px;
+					}
+					.down-top-right .dtr1 a:hover{
+						text-decoration: underline;
+					}
+					.down-top-right .dtr1 span{
+						color:#f00000;
+					}
+				.down-top-right .dtr2{
+					width: 382px;
+					height: 42px;
+					background:url(../images/xbt2.jpg) no-repeat;
+					background-position:1px -220px;
+					font-size: 12px;
+					color:#adb9e0;
+					line-height: 40px;
+				}
+					.dtr2 .dtr2-1{
+						width:165px;
+						float: left;
+						padding-left: 5px;
+					}
+						.dtr2 .dtr2-1 a{
+							color: #f93d23;
+							text-decoration: underline;
+						}
+					.dtr2 .dtr2-2{
+						width:180px;
+						float: right;
+					}
+					.dtr2 .dtr2-2 li{
+						float: left;
+					}
+						.dtr2 .dtr2-2-1{width:36px;}
+						.dtr2 .dtrr{
+							width:48px;
+							height:42px;
+							float: left;
+						}
+						.dtr2 .dtrr a{
+							width:40px;
+							height:41px;
+							display: block;
+							margin:0px 4px;
+							
+						}
+						.dtr2 .dtrr a:hover{background:url(../images/xbt2.jpg) no-repeat;}
+						.dtr2 .dtr2-2-2 a:hover{
+							background-position:-398px -221px
+						}
+						.dtr2 .dtr2-2-3 a:hover{
+							background-position:-443px -221px
+						}
+						.dtr2 .dtr2-2-4 a:hover{
+							background-position:-486px -221px
+						}
+						table{border-collapse:collapse;}
+						
+						.youin .tr2-2{position:relative;z-index: 10;}
+						.youin{
+							position: relative;
+						}
+		
+						.you{
+							width:328px;
+							height: 267px;
+							border: 1px solid #bbb;
+							background-color: #fff;
+							position: absolute;
+							top:48px;
+							left:-213px;
+							display: none;
+							border: 1px solid #e1e1e1;
+						}
+						.you td{
+							/*border:1px solid #dfdfdf;*/
+							border: 1px solid #e1e1e1;
+							width: 111px;
+							height: 33px;
+							font-size:12px;
+						}
+						td.me{
+							font-size: 12px;
+							color:#4e4e4e;
+							height: 33px;
+							text-indent: 30px;
+							/*background-color:#f2f2f2;*/
+							padding-left: 5px;
+							font-weight: bold;
+							background: url(../images/spann1.png) no-repeat 8px center #f2f2f2;
+						}
+						.you a{
+							color:#333;
+							height: 33px;
+							line-height: 33px;
+							text-indent: 15px;
+						}
+				.down-top-right .dtr3{
+					width: 382px;
+					height: 305px;
+					position: relative;
+				}
+					.dtr3 .dtr3-1{
+						height: 58px;
+						background: url(../images/xbt2.jpg) no-repeat;
+						background-position: 1px -262px;
+					}
+						.dtr3 .dtr3-1 li{
+							height: 58px;
+							width: 95px;
+							float:left;
+						}
+						.dtr3 .dtr3-1 a{
+							display: block;
+							height: 58px;
+							width: 95px;
+							color:#fdf4e0;
+							font-size:12px;
+							text-align: center;
+							line-height: 58px;
+						}
+						.dtr3 .dtr3-1 li.active .dina{
+							background: url(../images/xbt2.jpg) no-repeat;
+							background-position: 1px -320px;
+						}
+					.dtr3 .dtr3-2{
+						height: 208px;
+						width:348px;
+   					 	background: #322e3f;
+   					 	padding:18px 17px 20px 17px;
+   					 	position: absolute;
+   					 	top:58px;
+   					 	left:0;
+   					}
+	   					.dtr3 .dtr3-2 ul{
+	   						padding-top:12px; 
+	   					}
+	   					.dtr3 .dtr3-2 p{
+	   						background:url(../images/xbt2.jpg) no-repeat;
+	   						background-position:1px -378px;
+	   						height: 33px;
+	   						font-size:16px;
+	   						color: #ff460a; 
+	   						line-height: 32px;
+	   						text-align: center;
+
+	   					}
+	   					.dtr3 .dtr3-2 li{
+	   						width: 342px;
+							height: 26px;
+	   					}
+	   					.dtr3 .dtr3-2 li a{
+	   						width: 342px;
+							height: 26px;
+							font-size: 13px;
+							color:#9ca7ca;
+							line-height: 26px;
+	   					}
+	   					.dtr3 .dtr3-2 i{
+	   						width:302px;
+	   						display: inline-block;
+	   						text-align: left;
+	   					}
+	   					.dtr3 .dtr3-2 b{
+	   						width:40px;
+	   						display:inline-block;
+	   					}
+	   				
+	   				.dtr3 .dtr3-3{
+						height: 20px;
+						width:348px;
+					}
+						.dtr3 .dtr3-3 a{
+							width: 73px;
+							height: 20px;
+							line-height: 20px;
+							color:#9ca7ca;
+							font-size: 12px; 
+							display: block;
+							text-indent: 18px;
+							float: right;
+							background:url(../images/dtr3-3.png) no-repeat;
+							background-position:0px 4px;
+						}
+
+		.down-down{
+			height: 132px;
+			padding:32px 0px 30px 0px;
+		}
+			.down-down ul{
+				width: 1008px;
+				margin-right: -10px;
+			}
+			.down-down li{
+				float: left;
+				padding-right: 8px;
+			}
+			.down-down img{
+				border: 1px solid #433b4f;
+				transition:all 0.5s;
+			}
+			.down-down li:hover img{
+				transform:scale(1.05);
+				transition:all 0.5s;
+			}
+	
+	.activity{
+		height:348px;
+		width: 1000px;
+		margin:0 auto; 
+		padding-bottom:31px; 
+	}
+		.activity .activity-left{
+			width: 656px;
+			height: 346px;
+			border:1px solid #433b4f;
+			float:left;
+		}
+			.activity-left .altop{
+				height:59px;
+				width:660px;
+				background:url(../images/xbt2.jpg) no-repeat;
+				background-position:0px -412px;
+				border-bottom: 1px solid #3f324e;
+
+			}
+				.activity-left li{
+					width: 110px;
+					height: 59px;
+					float:left;
+					cursor:pointer;
+				}
+				.activity-left li{
+					background:url(../images/xbt2.jpg) no-repeat;
+					background-position: 100px 100px;		
+				}
+				.activity-left li.altop-0{
+					background-position:0px -470px;
+				}
+				
+				.activity-left li.altop-1{
+					background-position:-109px -470px;
+				}
+				.activity-left li.altop-2{
+					background-position:-219px -470px;
+				}
+				.activity-left li.altop-3{
+					background-position:-329px -470px;
+				}
+				.activity-left li.altop-4{
+					background-position:-439px -470px;
+				}
+				.activity-left li.altop-5{
+					background-position:-549px -470px;
+				}
+				
+				.activity-left .altop a{
+					width: 110px;
+					height: 59px;
+				}
+				.altop li{position:relative;}
+				.altop-0 .tutu1{display: block;}
+				.tutu1{
+					display: none;
+					position: absolute;
+					top:61px;
+					left:0;
+				}
+				.tutu2{
+					display: none;
+					position: absolute;
+					top:61px;
+					left:-110px;
+				}
+				.tutu3{
+					display: none;
+					position: absolute;
+					top:61px;
+					left:-220px;
+				}
+				.tutu4{
+					display: none;
+					position: absolute;
+					top:61px;
+					left:-330px;
+				}
+				.tutu5{
+					display: none;
+					position: absolute;
+					top:61px;
+					left:-440px;
+				}
+				.tutu6{
+					display: none;
+					position: absolute;
+					top:61px;
+					left:-550px;
+
+				}
+			
+			.activity-left .alin{
+				width: 656px;
+				height:287px;
+				position:relative;
+				cursor:pointer;
+			}
+				
+				
+		.activity-right{
+			width:321px;
+			height: 346px;
+			padding-left:20px;
+			float:left;
+		}
+			.activity-right h2{
+				height:46px;
+				line-height: 46px;
+				font-size:19px;
+				color:#f3ca90;
+				text-indent:10px;
+				
+			}
+				.activity-right em{
+					display:block;
+					height:30px;
+					width:30px;
+					float: left;
+					background: url(../images/xbt2.jpg) no-repeat;
+					background-position: -628px 0px;
+				}
+				.activity-right i{
+					height:30px;
+					width:290px;
+					float: left;
+					display: block;
+					line-height: 30px;
+				}
+			.activity-right li{
+				font-size: 12px;
+				/*height: 25px;*/
+				color:#a6b2d8;
+				line-height: 25px;
+				/*background: url(../images/xbt2.jpg) no-repeat;
+				background-position: 0px -530px;*/
+				margin-bottom:3px;
+				/*position: relative;*/
+			}
+			.activity-right a{
+				font-size: 12px;
+				display: inline-block;
+				color:#a6b2d8;
+				height: 25px;
+				width: 321px;
+				/*float:left;*/
+				text-indent: 27px;
+				background: url(../images/xbt2.jpg) no-repeat;
+				background-position: 0px -530px;
+			}
+			.activity-right span{
+				height: 25px;
+				width: 55px;
+				display: inline-block;
+				float: right;
+				text-align: center;
+				text-indent:0px;
+			}
+
+		.activity-right .tu{
+			width: 319px;
+			height: 149px;
+			border:1px solid #433b4f;
+			background: url(../images/tu.jpg) no-repeat;
+			display: none;
+			position: relative;
+		}
+		.activity-right .act li.active h3{
+			display: block;
+		}
+			.activity-right .tu b{
+				display: block;
+				width: 319px;
+				height: 36px;
+				background-color: #000;
+				opacity: 0.5;
+				position:absolute;
+				bottom:0;
+				left:0;
+			}
+			.activity-right .tu p{
+				display: block;
+				width: 319px;
+				height: 36px;
+				position:absolute;
+				bottom:0;
+				left:0;
+			}
+			.activity-right .tu i{
+				font-size:12px;
+				color:#fff;
+				height: 36px;
+				width: 94px;
+				font-weight:bold;
+				float:left;
+				display: inline-block;
+				text-indent: 5px;
+				line-height: 36px;
+			}
+			.activity-right .tu em{
+				font-size:12px;
+				height: 36px;
+				width:126px;
+				color:#a997c3;
+				float:right;
+				line-height: 36px;
+				display: inline-block;
+				text-indent: 23px;
+				background: url(../images/xiao.png) no-repeat left 10px;
+			}
+	
+	.box{
+		height:750px;
+	}
+	    .box1{
+	    	width: 238px;
+	    	height: 750px;
+	    	float: left;
+	    }
+			.box1-1{
+				width: 171px;
+				height: 189px;
+				background:url(../images/xbt2.jpg) no-repeat;
+				background-position:0px -555px;
+				padding:0px 22px;
+			}
+				.box1-1 h2{
+					height:40px;
+					font-size: 15px;
+					line-height: 40px;
+					color: #dbca90;
+					text-align: center;
+				}
+				.box1-1 ul{
+					width:73px;
+					height:110px;
+					padding-top:15px;
+				}	
+					.box1-1-1{
+						float:left;
+					}
+					.box1-1-2{
+						float:right;
+					}
+					.box1-1 a{
+						color: #9587ab;
+						font-size: 12px;
+						line-height: 28px;
+						display: inline-block;
+						text-indent: 5px;
+						background: url(../images/dian1.png) no-repeat center left;
+					}
+					.box1-1 a:hover{color: #f3ca90;}
+			.box1-2{
+				padding-top: 23px;
+			}
+			.box1-3{
+				width:205px;
+				height: 35px;
+				border:5px solid #322b3c;
+				background: url(../images/xbt2.jpg) no-repeat;
+				background-position:-451px -273px;
+				position: relative;
+			}
+				.box1-3 a{
+					width:205px;
+					height: 35px;
+					display: block;
+					color: #a295b7;
+					font-size: 15px;
+					line-height: 35px;
+					text-align: center;
+
+				}
+				.box1-3 .hezuo{
+					width:215px;
+					height:200px;
+					background-color: #322b3c;
+					position: absolute;
+					top:40px;
+					left:-5px;
+					display: none;
+				}
+				.box1-3 .hezuo a{
+					width:215px;
+				 	display: block;
+				 	color: #a295b7;
+				 	font-size:12px;
+				 	line-height: 20px;
+				 	text-align:center;
+				 }
+				 .box1-3 .hezuo a:hover{
+				 	color: #f3ca90;
+				 }
+			.box1-4{
+				width: 215px;
+				height: 268px;
+				overflow:hidden;
+				transition:all 1s;
+			}
+			.box1-4 img{
+				transition:all 1s;
+				cursor:pointer;
+			}
+			.box1-4 img.on{
+				margin-left:-215px;
+				transition:all 1s;
+			}
+		.box2{
+	    	width: 424px;
+	    	height: 750px;
+		    float: left;
+		}
+			.box2-1{
+				height: 350px;
+				width:424px;
+				float: left;
+			}
+			.box2-2{
+				height: 350px;
+				width:424px;
+				float: left;
+				padding-top: 40px;
+			}
+			.box2-1 h2{
+				height: 26px;
+				width: 160px;
+				text-indent: 50px;
+				line-height: 26px;
+				font-size: 18px;
+				color:#f3ca90;
+				background:url(../images/xbt2.jpg) no-repeat -608px -350px;
+				margin:3px 0px 13px 0px;
+			}
+			.box2-2 h2{
+				height: 26px;
+				width: 160px;
+				text-indent: 50px;
+				line-height: 26px;
+				font-size: 18px;
+				color:#f3ca90;
+				background:url(../images/xbt2.jpg) no-repeat -614px -383px;
+				margin:3px 0px 13px 0px;
+			}
+			
+			.box2 .playin{
+				width: 419px;
+				height: 303px;
+				border-left:1px solid #433b4f;
+				border-bottom:1px solid #433b4f;
+				border-right:1px solid #433b4f;
+				background-color: #322b3c;
+			}
+				.box2 .play{
+					width: 105px;
+					height: 47px;
+					float: left;
+					position: relative;
+				}
+				.box2 .tt{
+					height:46px;
+					width:104px;
+					font-size:12px;
+					line-height: 46px;
+					text-align: center;
+					color:#a295b7;
+					border-top: 1px solid #433b4f;
+					border-right: 1px solid #433b4f;
+					float: left;
+					display: block;
+					background-color: #1b1a20;
+					position:relative;
+				}
+				.box .active a.tt{
+					background-color:  #322b3c;
+				}
+				.box .play4 .tt{
+					margin-right: -1px;
+					border-right:1px solid #1b1a20;
+					border-top:1px solid #1b1a20;
+					background: url(../images/jia.png)no-repeat 8px center  #1b1a20;
+
+				}
+				.box .play4 .tt:hover{background: url(../images/jia.png)no-repeat 8px center  #1b1a20;}
+				.pg1{
+					position: absolute;
+					left:0;
+					top:46px;
+				}
+				.pg2{
+					display: none;
+					position: absolute;
+					left:-105px;
+					top:46px;
+				}
+				.pg3{
+					display: none;
+					position: absolute;
+					left:-210px;
+					top:46px;
+				}
+				.box2 .playing{
+					width: 283px;
+					height: 200px;
+					padding:26px 0px 30px 139px;
+					background: url(../images/playing.jpg) no-repeat 15px 33px #322b3c;
+				}
+				.box2-2 .playing{background: url(../images/playing2.jpg) no-repeat 15px 33px #322b3c;}
+				.box2 .playing a{
+					font-size: 12px;
+					line-height: 26px;
+					color:#9587ab;
+					text-indent:8px;
+					display: inline-block;
+					background: url(../images/dian1.png) no-repeat center left;
+				}
+
+		.box3{
+	    	width: 320px;
+	    	height: 750px;
+		    float: left;
+		    padding-left: 20px;
+		}
+			.box3-1{
+				height: 357px;
+				width:329px;
+				float: left;
+				padding-bottom:37px;
+			}
+				.box3-1 h2{
+					height: 26px;
+					width: 160px;
+					text-indent: 50px;
+					line-height: 26px;
+					font-size: 18px;
+					color:#f3ca90;
+					background:url(../images/xbt2.jpg) no-repeat -629px -42px;
+					margin:3px 0px 13px 0px;
+				}
+				.ziliao{
+					width: 287px;
+					height: 303px;
+					background-color:#26212d;
+					border:1px solid #4b3f5c;
+					padding:0px 16px 0px 17px;
+				}
+				.ziliao li{
+					height: 58px;
+					border-bottom:1px dashed #9587ab;
+					line-height: 58px;
+				}
+				.ziliao .last{
+					border:none;
+				}
+				.ziliao a{
+					height: 15px;
+					font-size: 12px;
+					border-right:1px solid #9587ab;
+					color:#9587ab;
+					line-height: 15px;
+					padding-right: 3px;
+				}
+				.ziliao a:hover{
+					opacity: 
+					0.7;
+				}
+				.ziliao span{
+					width: 70px;
+					height: 26px;
+					color:#fff;
+					font-size: 12px;
+					text-align: center;
+					line-height: 26px;
+					background-color:#594f67;
+					display: inline-block;
+					position: relative;
+					margin-right: 8px;
+				}
+				.ziliao i{
+					width: 8px;
+					height: 26px;
+					display: inline-block;
+					background: url(../images/ico.jpg) no-repeat;
+					position: absolute;
+					right:-8;
+					top:0;
+				}
+				a.go{
+					width: 279px;
+					height: 39px;
+					border:3px solid #4b3f5c;
+					text-align: center;
+					line-height: 39px;
+					color:#b1a1ca;
+					font-size:22px;
+					display: block;
+					margin-top: 5px;
+				}
+			.box3-2{
+				height: 352px;
+				width:326px;
+				float: left;
+			}
+				.box3-2 h2{
+					height: 26px;
+					width: 160px;
+					text-indent: 50px;
+					line-height: 26px;
+					font-size: 18px;
+					color:#f3ca90;
+					background:url(../images/xbt2.jpg) no-repeat -624px -81px;
+					margin:3px 0px 13px 0px;
+				}
+				.box3 .playin3{
+					width: 314px;
+					height: 301px;
+					border-left:1px solid #433b4f;
+					border-bottom:1px solid #433b4f;
+					border-right:1px solid #433b4f;
+					background-color: #322b3c;
+				}
+					.box3 .play13{
+						position:relative;
+					}
+					.box3 .play23{
+						position:relative;
+					}
+					.box3 .tt{
+						height:46px;
+						width:104px;
+						font-size:12px;
+						line-height: 46px;
+						text-align: center;
+						color:#a295b7;
+						border-top: 1px solid #433b4f;
+						border-right: 1px solid #433b4f;
+						float: left;
+						display: block;
+						background-color: #1b1a20;
+						position:relative;
+					}
+					.box .play43 .tt{
+						margin-right: -1px;
+						border-right:1px solid #1b1a20;
+						border-top:1px solid #1b1a20;
+						background: url(../images/jia.png)no-repeat 8px center  #1b1a20;
+
+					}
+					.pg13{
+						position: absolute;
+						left:0;
+						top:46px;
+					}
+					.pg23{
+						display: none;
+						position: absolute;
+						left:0;
+						top:46px;
+					}
+					.play13:hover .pg13{
+						display: block;
+					}
+					.play23:hover .pg23{
+						display: block;
+					}
+					.box3 .playing3{
+						width: 310px;
+						height: 232px;
+						padding:23px 0px 0px 11px;
+					}
+					.box3 .playing3 img{
+						width: 137px;
+						height: 90px;
+					}
+					.box3 .playing3 ul{
+						width: 320px;
+						height: 256px;
+					}
+					.box3 .playing3 li{
+						width: 137px;
+						height: 90px;
+						float: left;
+						padding:0px 22px 23px 0px;
+					} 
+
+	.foot{
+		height: 120px;
+		width: 1000px;
+		padding-top:54px;
+		background:url(../images/foot.jpg) no-repeat center 40px;
+		text-align: center;
+		margin:0 auto;
+	}
+		.foot h2{
+			font-size: 15px;
+			color:#9587ab;
+			padding-bottom:10px;
+		}
+		.foot p{
+			font-size: 15px;
+			color:#615770;
+			line-height: 30px;
+		}
+
+	.end-top{
+		height: 10px;
+		background: url(../images/jianbian.png) no-repeat;
+		background-position: 0px -55px;
+	}
+	.end{
+		height: 80px;
+		background: #181818;
+		padding-top: 20px;
+	}
+		.end span{
+			width: 105px;
+			height: 50px;
+			display: inline-block;
+			float: left;
+			background: url(../images/xbt_logo.png) no-repeat;
+			background-position: -4px -61px;
+
+		}
+		.end b{
+			width:40px;
+			height: 50px;
+			display: inline-block;
+			float: left;
+			background: url(../images/logo2.png) no-repeat;
+			background-position: 4px 0px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.end p{
+			color:#fff;
+			line-height: 23px;
+			font-size: 12px;
+			color:#767676;
+		}
+		.end .center{
+			width: 850px;
+		}
