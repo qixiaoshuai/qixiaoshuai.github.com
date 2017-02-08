@@ -77,131 +77,6 @@ window.onload=function(){
 	}
 
 
-	
-//canvas:
-// function gril(){
-// 	var oC=document.querySelector('canvas');
-// 	oC.width=100;
-// 	oC.height=450;
-// 	var grilH=180;
-// 	var grilW=100;
-// 	var y=0;
-// 	var i=0;
-// 	var timer=null;
-
-// 	oC.style.marginLeft=-oC.width/2+'px';
-// 	var gd=oC.getContext('2d');
-// 	var oGrilImg=new Image();
-// 	gd.moveTo(0,0);
-// 	oGrilImg.src="images/gril.png";	
-// 	oGrilImg.onload=function(ev){
-// 		timer=setInterval(function(){
-// 			gd.clearRect(0,0,oC.width,oC.height);
-// 				i++;
-// 				i%=4;
-// 				y=0;
-// 				gd.drawImage(oGrilImg,grilW*i,y,grilW,grilH,0,0,grilW,grilH);
-// 		},200);
-// 		document.onkeydown=function(ev){
-// 			clearInterval(timer);
-// 			timer=setInterval(function(){
-// 				switch(ev.keyCode){
-// 					case 37:
-// 						i++;
-// 						i%=4;
-// 						y=0;
-// 						break;
-// 					case 39:
-// 						i++;
-// 						i%=4;
-// 						y=grilH;
-// 						break;
-// 					case 32:
-// 						i=0;
-// 						y=grilH*2;
-// 						break;
-// 					default:
-// 						i++;
-// 						i%=4;
-// 						y=0;
-// 						break;	
-// 				}
-				
-// 				gd.clearRect(0,0,oC.width,oC.height);
-// 				gd.drawImage(oGrilImg,grilW*i,y,grilW,grilH,0,0,grilW,grilH);
-// 			},200);
-// 		}
-// 	}	
-// }
-
-//////////////////////////////////////////////////////////
-// function gril(ev){
-// 	var oC=document.querySelector('canvas');
-// 	oC.width=100;
-// 	oC.height=450;
-// 	var grilH=180;
-// 	var grilW=100;
-// 	var y=0;
-// 	var i=0;
-// 	var timer=null;
-
-// 	oC.style.marginLeft=-oC.width/2+'px';
-// 	var gd=oC.getContext('2d');
-// 	var oGrilImg=new Image();
-// 	gd.moveTo(0,0);
-// 	oGrilImg.src="images/gril.png";	
-// 	oGrilImg.onload=function(){
-
-// 		if(ev.keyCode=='37'){
-// 			clearInterval(timer);
-// 			timer=setInterval(function(){
-// 				gd.clearRect(0,0,oC.width,oC.height);
-// 					i++;
-// 					i%=4;
-// 					y=0;
-// 				gd.drawImage(oGrilImg,grilW*i,y,grilW,grilH,0,0,grilW,grilH);
-// 			},200);
-// 		}
-// 		document.onkeydown=function(ev){
-// 			clearInterval(timer);
-// 			timer=setInterval(function(){
-// 				switch(ev.keyCode){
-// 					case 37:
-// 						i++;
-// 						i%=4;
-// 						y=0;
-// 						break;
-// 					case 39:
-// 						i++;
-// 						i%=4;
-// 						y=grilH;
-// 						break;
-// 					case 32:
-// 						i=0;
-// 						y=grilH*2;
-// 						break;
-// 					default:
-// 						i++;
-// 						i%=4;
-// 						y=0;
-// 						break;	
-// 				}
-				
-// 				gd.clearRect(0,0,oC.width,oC.height);
-// 				gd.drawImage(oGrilImg,grilW*i,y,grilW,grilH,0,0,grilW,grilH);
-// 			},200);
-// 		}
-// 	}	
-// }
-
-
-////////////////////////////////////////////////////////////
-
-
-
-//键盘控制：
-//gril();
-
 //地球部分：
 
 	//拖拽的地球：
@@ -305,9 +180,7 @@ window.onload=function(){
 		move(obj,{opacity:1},{duration:3000});
 
 		//气球：
-		// setTimeout(function(){
-		// 	move(oBalloon,{top:300},{duration:3000});
-		// },4000);
+	
 		//all运动结束
 		setTimeout(function(){
 			oFoot.style.zIndex=-10;
@@ -325,21 +198,7 @@ window.onload=function(){
 		couldRun(oLike);
 	},false);
 
-	// aNav[1].addEventListener('click',function(){
-	// 	oExper.setAttribute('name','yes');
-	// 	couldRun(oExper);
-	// },false);
 
-	// aNav[2].addEventListener('click',function(){
-	// 	oSkill.setAttribute('name','yes');
-	// 	couldRun(oSkill);
-	// },false);
-
-	// aNav[3].addEventListener('click',function(){
-	// 	oShare.setAttribute('name','yes');
-	// 	couldRun(oShare);
-
-	// },false);
 
 //箭头和地方提示：
 
@@ -748,11 +607,5 @@ window.onload=function(){
 			},false);
 		})(i);
 	}
-	
-
-
-
-
-
 
 }
